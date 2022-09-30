@@ -26,6 +26,7 @@ services:
       context: ./images
       dockerfile: php.Dockerfile
     container_name: real_php
+    image: lvquang/docker_project
     volumes:
       - ./projects:/var/www/html
       - ./logs/php-fpm/php-fpm.log:/var/log/php-fpm.log
